@@ -1,14 +1,14 @@
 <div class="container"
 	fxlayout="column"
 	fxlayoutGap="10px">
-<!--
+
 	<div fxFlex>
 		<div>
 			<h3>Menu</h3>
 			<hr>
 		</div>
 	</div>
--->
+
 	<div fxFlex>
 		<md-grid-list cols="2" rowHeight="200px">
 			<md-grid-tile *ngFor="let dish of dishes">
@@ -20,6 +20,7 @@
 		</md-grid-list>
 	</div>
 
+<!--
 	<div fxFlex *ngIf="selectedDish">
 		<md-card>
 			<md-card-header>
@@ -37,5 +38,9 @@
 			</md-card-actions>
 		</md-card>
 	</div>
+-->
+
+<app-dishdetail></app-dishdetail>
+
 </div>
 
