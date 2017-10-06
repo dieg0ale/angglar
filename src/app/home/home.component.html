@@ -33,4 +33,21 @@
   </md-card-content>
 </md-card>
 
+<md-card *ngIf="featuredLeader" fxFlex>
+  <md-card-header> 
+    <md-card-title>
+      <h3>{{featuredLeader.name | uppercase}}</h3>
+    </md-card-title>
+  </md-card-header>
+  <img md-card-image src={{featuredLeader.image}} alt={{featuredLeader.name}}>
+  <md-card-content>
+  	<p>
+  		<span>{{featuredLeader.designation}}</span>
+    </p>
+    <p>
+    	<span>{{featuredLeader.description}}</span>
+    </p>
+  </md-card-content>
+</md-card>
+
 </div>
